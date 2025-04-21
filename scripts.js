@@ -1,3 +1,11 @@
+const hamburger = document.getElementById("hamburger");
+
+hamburger.addEventListener("click", () => {
+  const mobileNav = (document.getElementById(
+    "mobile-nav"
+  ).textContent.style.display = "block");
+});
+
 const btnShow = document.getElementById("btnShow");
 const btnHide = document.getElementById("btnHide");
 

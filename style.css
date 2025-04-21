@@ -48,6 +48,30 @@ ul {
   }
 }
 
+/* for the mobile nav */
+.mobile-nav {
+  background-color: #903aff;
+  position: absolute;
+  top: 63px;
+  width: 100%;
+  text-align: center;
+  display: none;
+
+  li {
+    list-style: none;
+    margin: 30px;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+    padding: 30px;
+    text-align: center;
+  }
+}
+#hamburger {
+  display: none;
+}
+
 /* for the main section */
 /* sec-1 */
 .sec-1 {
@@ -840,50 +864,201 @@ footer {
 
   .sec-10-1 {
     div:first-child {
-        margin-left: 10px;
+      margin-left: 10px;
     }
-  .privacy-text{
-    h1 {
-      font-family: Clash Display;
-      font-weight: 700;
-      font-size: 24px;
-      line-height: 100%;
-      letter-spacing: 0%;
-      color: white;
+    .privacy-text {
+      h1 {
+        font-family: Clash Display;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        color: white;
+      }
+      p {
+        color: white;
+        font-size: 16px;
+      }
     }
-    p {
-      color: white;
-      font-size: 16px;
+
+    .whatwedo {
+      width: 269px;
+      height: 400px;
+
+      p {
+        font-size: 12px;
+      }
+      li {
+        font-size: 12px;
+      }
+
+      button {
+        background: linear-gradient(
+          270deg,
+          #903aff 0%,
+          #d434fe 56.42%,
+          #ff26b9 99.99%,
+          #fe34b9 100%
+        );
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 30px;
+        display: block;
+        margin: auto;
+        margin-top: 15px;
+      }
     }
   }
+  .sec-9-1 {
+    padding: 40px;
+    max-width: 800px;
 
-  .whatwedo {
-    width: 269px;
-    height: 400px;
+    .first-partners img {
+      width: 120px;
+    }
+    .first-partners .line {
+      width: 5px;
+    }
 
-    p {
-      font-size: 12px;
+    .second-partners {
+      margin-left: -60px;
     }
-    li {
-      font-size: 12px;
+    .second-partners img {
+      width: 120px;
     }
-    
-    button {
-      background: linear-gradient(
-        270deg,
-        #903aff 0%,
-        #d434fe 56.42%,
-        #ff26b9 99.99%,
-        #fe34b9 100%
-      );
-      color: white;
-      border: none;
-      border-radius: 5px;
-      padding: 10px 30px;
-      display: block;
-      margin: auto;
-      margin-top: 15px;
+    .second-partners .line {
+      width: 5px;
+    }
+
+    .underline img {
+      width: 200px;
+      padding: 10px;
     }
   }
 }
+
+@media (max-width: 963px) {
+  .footer {
+    display: block;
+    /* margin: auto; */
+  }
+  .footer {
+    div:nth-of-type(2) {
+      max-width: 380px;
+      padding-right: 0;
+    }
+  }
+}
+
+@media (max-width: 860px) {
+  .sec-7 {
+    max-width: 300em;
+  }
+  .sec-7 div:nth-of-type(2) img {
+    height: 58px;
+  }
+  .sec-9-1 {
+    max-width: 700px;
+
+    .underline img {
+      width: 150px;
+      padding: 8px;
+    }
+  }
+  .privacy img {
+    width: 300px;
+  }
+
+  .sec-1 img:last-child {
+    width: 560px;
+    /* margin-left: 1px; */
+  }
+}
+
+@media (max-width: 845px) {
+  header ul {
+    display: none;
+  }
+  header a {
+    display: none;
+  }
+  #hamburger {
+    display: block;
+    width: 25px;
+  }
+  .sec-1 div h2 {
+    left: 170px;
+    font-size: 30px;
+  }
+
+  .sec-1 #curvedLine {
+    width: 250px;
+    right: 150px;
+  }
+
+  .sec-1 {
+    display: block;
+    text-align: center;
+    margin-top: -55px;
+  }
+  .sec-1 div {
+    margin-left: 20px;
+    width: 100%;
+  }
+  .sec-1 div #time {
+    justify-content: center;
+  }
+
+  .sec-2 {
+    display: block;
+    text-align: center;
+    margin: auto;
+  }
+  .sec-2 div {
+    max-width: 80%;
+    display: block;
+    margin: auto;
+  }
+  .main-faq {
+    max-width: 80%;
+    display: block;
+    margin: auto;
+  }
+  .sec-2 img {
+    margin-top: 30px;
+  }
+
+  .sec-7 div:first-child {
+    display: none;
+  }
+  .sec-7 {
+    max-width: 40%;
+    margin: auto;
+  }
+
+  .sec-9-1 {
+    max-width: 35em;
+    .first-partners img {
+      width: 80px;
+    }
+    .second-partners img {
+      width: 80px;
+    }
+  }
+  .sec-10-1 {
+    display: block;
+    max-width: 40em;
+    text-align: center;
+
+    .whatwedo {
+      display: block;
+      margin: auto;
+    }
+  }
+  .privacy img {
+    display: block;
+    margin: auto;
+    text-align: center;
+  }
 }

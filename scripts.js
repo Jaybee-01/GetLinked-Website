@@ -14,3 +14,5 @@ btnHide.onclick = () => {
     item.style.display = "none";
   });
 };
+
+// const btnShow = document.addEventListener(onclick);

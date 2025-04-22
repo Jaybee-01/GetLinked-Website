@@ -297,10 +297,11 @@
       left: 0;
       right: 0;
       z-index: 20;
-    }
-    header ul,
-    a {
-      display: none;
+
+      ul,
+      a {
+        display: none;
+      }
     }
 
     #hamburger {
@@ -674,7 +675,7 @@
       width: 380px;
     }
     li span {
-        font-size: 40px;
+      font-size: 40px;
     }
   }
 }

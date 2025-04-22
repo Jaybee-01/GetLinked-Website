@@ -14,7 +14,7 @@ header {
   margin: auto;
   margin-bottom: 100px;
   padding: 10px;
-  border-bottom: 1px solid grey;
+  /* border-bottom: 1px solid grey; */
   background: hsla(256, 48%, 11%, 1);
   #logo {
     list-style: none;
@@ -54,13 +54,15 @@ ul {
 
 /* for the mobile nav */
 .mobile-nav {
-  background-color: #903aff;
-  position: absolute;
-  top: 63px;
+  background: hsla(256, 48%, 11%, 1);
+  position: fixed;
+  top: 60px;
+  z-index: 20;
   width: 100%;
   text-align: center;
   display: none;
-
+  height: 300px;
+  border: 1px solid red;
   li {
     list-style: none;
     margin: 30px;
@@ -70,6 +72,7 @@ ul {
     color: white;
     padding: 30px;
     text-align: center;
+    font-size: 20px;
   }
 }
 #hamburger {
@@ -716,7 +719,7 @@ footer {
       margin-right: 10px;
     }
   }
-    li .span {
-      font-size: 20px;
+  li .span {
+    font-size: 20px;
   }
 }

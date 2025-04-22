@@ -1,9 +1,19 @@
 const hamburger = document.getElementById("hamburger");
+const mobileNav = document.getElementById("mobileNav");
+const navLinks = mobileNav.querySelectorAll("a");
 
 hamburger.addEventListener("click", () => {
-  const mobileNav = (document.getElementById(
-    "mobile-nav"
-  ).textContent.style.display = "block");
+  if (mobileNav.style.display === "block") {
+    mobileNav.style.display = "none";
+  } else {
+    mobileNav.style.display = "block";
+  }
+});
+
+navLinks.forEach((link) => {
+  link.onclick = () => {
+    mobileNav.style.display = "none";
+  };
 });
 
 const btnShow = document.getElementById("btnShow");

@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: hsla(256, 48%, 11%, 1);
+}
+html {
+  scroll-behavior: smooth;
+}
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1400px;
+  margin: auto;
+  margin-bottom: 100px;
+  padding: 10px;
+  border-bottom: 1px solid grey;
+  background: hsla(256, 48%, 11%, 1);
+  #logo {
+    list-style: none;
+    color: hsla(0, 0%, 100%, 1);
+    font-size: 36px;
+    font-weight: 700;
+  }
+
+  a button {
+    background: linear-gradient(
+      270deg,
+      #903aff 0%,
+      #d434fe 56.42%,
+      #ff26b9 99.99%,
+      #fe34b9 100%
+    );
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+  }
+}
+header li a {
+  text-decoration: none;
+  color: #fff;
+}
+span {
+  color: purple;
+}
+ul {
+  display: flex;
+  margin-left: 100px;
+  li {
+    list-style: none;
+  }
+  li a {
+    text-decoration: none;
+    padding: 30px;
+    color: hsla(0, 0%, 100%, 1);
+  }
+}
+
+/* for the mobile nav */
+.mobile-nav {
+  background-color: #903aff;
+  position: absolute;
+  top: 63px;
+  width: 100%;
+  text-align: center;
+  display: none;
+
+  li {
+    list-style: none;
+    margin: 30px;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+    padding: 30px;
+    text-align: center;
+  }
+}
+#hamburger {
+  display: none;
+}
+
+/* for the contact form */
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  max-width: 1400px;
+  margin-bottom: 100px;
+}
+section div {
+  width: 20%;
+  p {
+    color: white;
+  }
+  img {
+    padding: 5px;
+  }
+}
+form {
+  background: hsla(0, 0%, 100%, 0.03);
+  border-radius: 10px;
+  padding: 40px 20px;
+  text-align: center;
+
+  input,
+  textarea {
+    width: 80%;
+    padding: 8px;
+    margin: 10px;
+    background: hsla(0, 0%, 100%, 0.03);
+    border: 1px solid hsla(0, 0%, 100%, 1);
+    color: white;
+  }
+  button {
+    background: linear-gradient(
+      270deg,
+      #903aff 0%,
+      #d434fe 56.42%,
+      #ff26b9 99.99%,
+      #fe34b9 100%
+    );
+    border: none;
+    border-radius: 5px;
+    padding: 10px 30px;
+    width: 100px;
+  }
+  p {
+    font-family: Clash Display;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+
+    text-align: justify;
+    margin: 5px 30px;
+    /* padding: 10px; */
+  }
+}

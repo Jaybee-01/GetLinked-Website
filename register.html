@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register || GetLinked</title>
+    <link rel="stylesheet" href="register.css" />
+  </head>
+  <body>
+    <!-- For the navigation bar -->
+    <header>
+      <li id="logo">
+        <a href="index.html">get<span>linked</span></a>
+      </li>
+      <ul>
+        <li><a href="#">Timeline</a></li>
+        <li><a href="">Overview</a></li>
+        <li><a href="#">FAQs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div>
+        <img src="./imgs/hamburger.png" alt="" id="hamburger" />
+        <a href=""><button>Register</button></a>
+      </div>
+    </header>
+    <section class="mobile-nav">
+      <li><a href="">Timeline</a></li>
+      <li><a href="">Overwiew</a></li>
+      <li><a href="">FAQs</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </section>
+
+    <!-- section for the register form -->
+
+    <main>
+      <section>
+        <img src="./imgs/register.svg" alt="" />
+
+        <form action="">
+          <h2><span>Register</span></h2>
+          <p>Be part of this movement! 🚶</p>
+          <h2>CREATE YOUR ACCOUNT</h2>
+
+          <label for="teamsName">Team's Name</label> <br />
+          <input
+            type="text"
+            id="teamsName"
+            placeholder="Enter the name of your group"
+            required
+          />
+          <label for="phone">Phone</label> <br />
+          <input
+            type="number"
+            id="phone"
+            placeholder="Enter your phone number"
+          />
+
+          <label for="Email">Email Address</label> <br />
+          <input type="text" id="Email" placeholder="Enter the email address" />
+          <label for="topic">Project Topic</label>
+          <input
+            type="text"
+            id="topic"
+            placeholder="Enter your project topic"
+          />
+          <br />
+
+          <label for="category">Category</label> <br />
+          <select name="" id="category">
+            <option value="">Select your category</option>
+          </select>
+          <br />
+          <button>Submit</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

@@ -3,6 +3,9 @@ body {
   padding: 0;
   background: hsla(256, 48%, 11%, 1);
 }
+html {
+  scroll-behavior: smooth;
+}
 header {
   display: flex;
   justify-content: space-around;

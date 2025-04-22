@@ -14,7 +14,7 @@ header {
   margin: auto;
   margin-bottom: 100px;
   padding: 10px;
-  /* border-bottom: 1px solid grey; */
+  border-bottom: 1px solid grey;
   background: hsla(256, 48%, 11%, 1);
   #logo {
     list-style: none;
@@ -62,7 +62,6 @@ ul {
   text-align: center;
   display: none;
   height: 300px;
-  border: 1px solid red;
   li {
     list-style: none;
     margin: 30px;

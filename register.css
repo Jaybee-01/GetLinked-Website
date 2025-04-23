@@ -83,18 +83,23 @@ section {
 
 
 .form-container {
-  background-color: #ffffff;
-  width: 400px;
+  background: hsla(0, 0%, 100%, 0.03);
+  width: 740px;
   padding: 20px 30px;
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  color: white ;
 }
 
 .form-title {
-  text-align: center;
+  text-align: left;
   margin-bottom: 20px;
   font-size: 22px;
   font-weight: bold;
+
+  h2 {
+    font-size: 20px;
+  }
 }
 
 .form-row {

@@ -77,18 +77,24 @@ section {
   margin-bottom: 100px;
 
   img {
-    max-width: 80%;
+    max-width: 50%;
   }
 }
 
 
 .form-container {
   background: hsla(0, 0%, 100%, 0.03);
-  width: 740px;
-  padding: 20px 30px;
+  width: 40%;
+  padding: 20px 70px;
   border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  color: white ;
+  color: hsla(0, 0%, 100%, 1);
+
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0px 4px 4px 0px hsla(0, 0%, 0%, 0.25);
+
 }
 
 .form-title {
@@ -96,6 +102,11 @@ section {
   margin-bottom: 20px;
   font-size: 22px;
   font-weight: bold;
+
+  p{
+    font-weight: 100;
+    font-size: 15px;
+  }
 
   h2 {
     font-size: 20px;
@@ -121,11 +132,19 @@ label {
   text-align: left;
 }
 
-input {
-  padding: 8px;
-  font-size: 14px;
-  border: 1px solid #ccc;
+input, select {
+  padding: 8%;
+  font-size: 80%;
+  border: 1px solid hsla(0, 0%, 100%, 1);
   border-radius: 6px;
+  background: hsla(256, 48%, 11%, 1);
+  color: rgb(143, 133, 133);
+}
+option {
+  color: white  ;
+}
+.agree {
+  vertical-align: center;
 }
 
 .submit-btn {
@@ -133,7 +152,6 @@ input {
   width: 100%;
   padding: 10px;
   font-size: 16px;
-  background-color: #007bff;
   color: white;
   border: none;
   border-radius: 6px;
@@ -156,6 +174,31 @@ button {
   border-radius: 5px;
   padding: 10px 30px;
   width: 100px;
+}
+
+@media  (max-width: 1198px){
+  main {
+    max-width: 1400px;
+    margin: auto;
+  }
+   section {
+    display: flex;
+    flex-direction: column;
+  }
+  .form-row {
+    display: block;
+    margin: 10px 2px;
+  }
+  .form-group {
+    width: 10em;
+    padding: 5px 10px;
+  }
+  input, select {
+    padding: 8%;
+    font-size: 80%;
+  }
+
+  
 }
 
 @media (max-width: 845px) {

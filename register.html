@@ -31,33 +31,56 @@
         <form class="form-container">
           <div class="form-title">
             <h1><span>Register</span></h1>
-            <p>Be part of this movement! 🚶‍♂️🚶‍♀️</p>
+            <p>Be part of this movement!.......... 🚶‍♂️🚶‍♀️.........</p>
             <h2>CREATE YOUR ACCOUNT</h2>
           </div>
       
           <div class="form-row">
             <div class="form-group">
-              <label for="firstName">First Name</label>
-              <input type="text" id="firstName" placeholder="Enter first name">
+              <label for="firstName">Team's Name</label>
+              <input type="text" id="firstName" placeholder="Enter the name of your group" required>
             </div>
             <div class="form-group">
-              <label for="lastName">Last Name</label>
-              <input type="text" id="lastName" placeholder="Enter last name">
+              <label for="lastName">Phone</label>
+              <input type="text" id="lastName" placeholder="Enter your phone number" required>
             </div>
           </div>
       
           <div class="form-row">
             <div class="form-group">
               <label for="email">Email</label>
-              <input type="email" id="email" placeholder="Enter your email">
+              <input type="email" id="email" placeholder="Enter your email address" required>
             </div>
             <div class="form-group">
-              <label for="password">Password</label>
-              <input type="password" id="password" placeholder="Enter password">
+              <label for="topic">Project Topic</label>
+              <input type="text" id="topic" placeholder="What is your group project topic" required>
             </div>
           </div>
-      
-          <button type="submit" class="submit-btn">Register</button>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="Category">Category</label>
+              <select id="Category" placeholder="Select your category" required>
+                <option value="">Select your category</option>
+                <option value="">Cat 1</option>
+                <option value="">Cat 2</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="size">Group Size</label>
+              <select id="size" placeholder="Select your category" required>
+                <option value="">Select</option>
+                <option value="">Size 1</option>
+                <option value="">Size 2</option>
+              </select>
+            </div>
+          </div>
+          <p><span>Please review your registration details before submitting</span></p>
+          <div class="agree">
+            <input type="checkbox" id="agree"><label for="agree">I agreed with the event terms and conditions  and privacy policy</label>
+          </div>
+          <button type="submit" class="submit-btn">Register Now</button>
+
         </form>
         </form>
       </section>

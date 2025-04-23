@@ -320,6 +320,11 @@
     #hamburger {
       display: block;
       width: 25px;
+      color: white;
+    }
+    #closeHamburger {
+      display: none;
+      color: white;
     }
     main {
       margin-top: 120px;

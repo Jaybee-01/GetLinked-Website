@@ -90,7 +90,7 @@ ul {
     margin-left: 25px;
   }
 }
-#hamburger {
+#hamburger, #closeHamburger {
   display: none;
 }
 

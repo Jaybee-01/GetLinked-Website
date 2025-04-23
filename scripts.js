@@ -1,4 +1,5 @@
 const hamburger = document.getElementById("hamburger");
+const closeHamburger = document.getElementById("closeHamburger");
 const mobileNav = document.getElementById("mobileNav");
 const navLinks = mobileNav.querySelectorAll("a");
 

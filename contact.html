@@ -13,26 +13,26 @@
         <a href="index.html">get<span>linked</span></a>
       </li>
       <ul>
-        <li><a href="#">Timeline</a></li>
-        <li><a href="#">Overview</a></li>
-        <li><a href="#">FAQs</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#timeline">Timeline</a></li>
+        <li><a href="">Overview</a></li>
+        <li><a href="#faqs">FAQs</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
       <div>
         <img src="./imgs/hamburger.png" alt="" id="hamburger" />
-        <a href="register.html"><button>Register</button></a>
+        <a href=""><button>Register</button></a>
       </div>
     </header>
-    <section class="mobile-nav">
-      <li><a href="">Timeline</a></li>
-      <li><a href="">Overwiew</a></li>
-      <li><a href="">FAQs</a></li>
-      <li><a href="">Contact</a></li>
+    <section class="mobile-nav" id="mobileNav">
+      <li><a href="index.html#timeline">Timeline</a></li>
+      <li><a href="#">Overwiew</a></li>
+      <li><a href="index.html#faqs">FAQs</a></li>
+      <li><a href="#">Contact</a></li>
     </section>
 
     <!-- section for the contact form -->
-
     <main>
+    <div></div>
       <section class="form">
         <div>
           <h1><span>Get in touch</span></h1>
@@ -60,6 +60,8 @@
           <p><span>Questions or need assistance?</span></p>
           <p><span>Let us know about it!</span></p>
 
+          <input type="text" placeholder="Tean's Name" class="mobile" />
+          <input type="text" placeholder="Topic" class="mobile" />
           <input type="text" placeholder="First Name" />
           <input type="email" placeholder="Email" /> <br />
           <br />
@@ -70,9 +72,18 @@
             rows="10"
             placeholder="Message"
           ></textarea>
-          <button>Submit</button>
+          <button type="submit">Submit</button>
         </form>
       </section>
+      <div class="mobile-contact">
+        <p><span>Share on</span></p>
+        <img src="./imgs/Ig.png" alt="" />
+        <img src="./imgs/X.png" alt="" />
+        <img src="./imgs/fb.png" alt="" />
+        <img src="./imgs/linkedIn.png" alt="" />
+      </div>
     </main>
+
+    <script src="./scripts.js"></script>
   </body>
 </html>

@@ -57,8 +57,9 @@ ul {
 }
 
 /* for the mobile nav */
+
 .mobile-nav {
-  background-color: #903aff;
+  background: hsla(256, 48%, 11%, 1);
   position: absolute;
   top: 63px;
   width: 100%;
@@ -81,7 +82,10 @@ ul {
 }
 
 /* for the contact form */
-
+main {
+  max-width: 1400px;
+  margin: auto;
+}
 section {
   display: flex;
   align-items: center;
@@ -108,7 +112,7 @@ form {
   textarea {
     width: 80%;
     padding: 8px;
-    margin: 10px;
+    margin: 10px 0px;
     background: hsla(0, 0%, 100%, 0.03);
     border: 1px solid hsla(0, 0%, 100%, 1);
     color: white;
@@ -125,16 +129,96 @@ form {
     border-radius: 5px;
     padding: 10px 30px;
     width: 100px;
+    text-align: center;
   }
   p {
     font-family: Clash Display;
     font-weight: 600;
     font-size: 20px;
-    line-height: 100%;
+    line-height: 30%;
     letter-spacing: 0%;
-
     text-align: justify;
-    margin: 5px 30px;
-    /* padding: 10px; */
+  }
+  p {
+    margin-left: 40px;
+  }
+}
+
+.mobile,
+.mobile-contact {
+  display: none;
+}
+
+@media (max-width: 845px) {
+  header {
+    justify-content: space-between;
+    padding: 20px 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 20;
+
+    ul {
+      display: none;
+    }
+    a button {
+      display: none;
+    }
+  }
+
+  #hamburger {
+    display: block;
+    width: 25px;
+  }
+
+  .mobile-nav {
+    position: fixed;
+    top: -17px;
+    max-width: 100%;
+  }
+  section {
+    max-width: 500px;
+    margin: auto;
+    margin-top: 100px;
+    display: block;
+
+    div {
+      width: 100%;
+      margin: auto;
+
+      p,
+      img,
+      span {
+        display: none;
+      }
+    }
+    form {
+      /* margin-top: 300px; */
+      background: none;
+    }
+  }
+
+  form .mobile {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    padding: 8px;
+    background: hsla(0, 0%, 100%, 0.03);
+    border: 1px solid hsla(0, 0%, 100%, 1);
+    color: white;
+  }
+
+  .mobile-contact {
+    display: block;
+    text-align: center;
+
+    p {
+      font-size: 30px;
+    }
+    img {
+      margin: 5px 10px;
+    }
   }
 }

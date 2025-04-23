@@ -1,22 +1,22 @@
-const hamburger = document.getElementById("hamburger");
-const closeHamburger = document.getElementById("closeHamburger");
+// For the mobile nav
+const menu = document.getElementById("menu-bar");
 const mobileNav = document.getElementById("mobileNav");
-const navLinks = mobileNav.querySelectorAll("a");
+const links = mobileNav.querySelectorAll("a");
 
-hamburger.addEventListener("click", () => {
-  if (mobileNav.style.display === "block") {
-    mobileNav.style.display = "none";
-  } else {
-    mobileNav.style.display = "block";
-  }
+menu.addEventListener("click", () => {
+  menu.classList.toggle("active");
+  mobileNav.classList.toggle("active");
 });
 
-navLinks.forEach((link) => {
+links.forEach((link) => {
   link.onclick = () => {
-    mobileNav.style.display = "none";
+    // mobileNav.style.display = "none";
+    menu.classList.remove("active");
+    mobileNav.classList.remove("active");
   };
 });
 
+// For the FAQs
 const btnShow = document.getElementById("btnShow");
 const btnHide = document.getElementById("btnHide");
 

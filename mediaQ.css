@@ -316,16 +316,25 @@
         color: white;
       }
     }
-
-    #hamburger {
+    #menu-bar {
       display: block;
-      width: 25px;
-      color: white;
+     
     }
-    #closeHamburger {
+    #menu-bar .menu-close {
       display: none;
+    }
+    #menu-bar.active .menu-open {
+      display: none;
+    }
+    #menu-bar.active .menu-close {
+      display: block;
       color: white;
     }
+
+    .mobile-nav.active {
+      display: block;
+    }
+
     main {
       margin-top: 120px;
     }

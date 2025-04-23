@@ -52,12 +52,16 @@ ul {
   }
 }
 
+#menu-bar {
+  display: none;   /*makes the hamburger icona to be closed*/
+}
+
 /* for the mobile nav */
 .mobile-nav {
   background: hsla(256, 48%, 11%, 1);
   position: fixed;
   top: 0;
-  z-index: 20;
+  z-index: 2;
   width: 100%;
   text-align: left;
   display: none;
@@ -89,9 +93,6 @@ ul {
     color: white;
     margin-left: 25px;
   }
-}
-#hamburger, #closeHamburger {
-  display: none;
 }
 
 /* for the main section */

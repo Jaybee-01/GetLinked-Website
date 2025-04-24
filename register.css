@@ -34,6 +34,7 @@ header {
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
+    color: white;
   }
 }
 header li a {
@@ -81,7 +82,6 @@ section {
   }
 }
 
-
 .form-container {
   background: hsla(0, 0%, 100%, 0.03);
   width: 40%;
@@ -94,7 +94,6 @@ section {
   flex-direction: column;
   justify-content: center;
   box-shadow: 0px 4px 4px 0px hsla(0, 0%, 0%, 0.25);
-
 }
 
 .form-title {
@@ -103,7 +102,7 @@ section {
   font-size: 22px;
   font-weight: bold;
 
-  p{
+  p {
     font-weight: 100;
     font-size: 15px;
   }
@@ -132,7 +131,8 @@ label {
   text-align: left;
 }
 
-input, select {
+input,
+select {
   padding: 8%;
   font-size: 80%;
   border: 1px solid hsla(0, 0%, 100%, 1);
@@ -141,28 +141,13 @@ input, select {
   color: rgb(143, 133, 133);
 }
 option {
-  color: white  ;
+  color: white;
 }
 .agree {
   vertical-align: center;
 }
 
-.submit-btn {
-  margin-top: 20px;
-  width: 100%;
-  padding: 10px;
-  font-size: 16px;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.submit-btn:hover {
-  background-color: #0056b3;
-}
-button {
+form button {
   background: linear-gradient(
     270deg,
     #903aff 0%,
@@ -173,15 +158,55 @@ button {
   border: none;
   border-radius: 5px;
   padding: 10px 30px;
-  width: 100px;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  color: white;
 }
 
-@media  (max-width: 1198px){
+#alert {
+  position: absolute;
+  top: 30vh;
+  right: 30vw;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  border: 1px solid hsla(288, 99%, 60%, 1);
+  display: none;
+  width: 600px;
+  p {
+    margin-top: -10px;
+  }
+  button {
+  background: linear-gradient(
+    270deg,
+    #903aff 0%,
+    #d434fe 56.42%,
+    #ff26b9 99.99%,
+    #fe34b9 100%
+  );
+  border: none;
+  border-radius: 5px;
+  padding: 10px 30px;
+  width: 80%;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+}
+@media (max-width: 1198px) {
   main {
     max-width: 1400px;
     margin: auto;
   }
-   section {
+  section {
     display: flex;
     flex-direction: column;
   }
@@ -193,12 +218,11 @@ button {
     width: 10em;
     padding: 5px 10px;
   }
-  input, select {
+  input,
+  select {
     padding: 8%;
     font-size: 80%;
   }
-
-  
 }
 
 @media (max-width: 845px) {

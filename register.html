@@ -26,34 +26,54 @@
     <a href="index.html" id="bthome"><i class="fa-solid fa-arrow-left"></i></a>
     <!-- section for the register form -->
     <main>
-      <section>
+      <section id="regMeSection">
         <img src="./imgs/register.svg" alt="" />
-        <form class="form-container">
+        <form class="form-container" id="registerform">
           <div class="form-title">
             <h1><span>Register</span></h1>
             <p>Be part of this movement!.......... 🚶‍♂️🚶‍♀️.........</p>
             <h2>CREATE YOUR ACCOUNT</h2>
           </div>
-      
+
           <div class="form-row">
             <div class="form-group">
               <label for="firstName">Team's Name</label>
-              <input type="text" id="firstName" placeholder="Enter the name of your group" required>
+              <input
+                type="text"
+                id="firstName"
+                placeholder="Enter the name of your group"
+                required
+              />
             </div>
             <div class="form-group">
               <label for="lastName">Phone</label>
-              <input type="text" id="lastName" placeholder="Enter your phone number" required>
+              <input
+                type="text"
+                id="lastName"
+                placeholder="Enter your phone number"
+                required
+              />
             </div>
           </div>
-      
+
           <div class="form-row">
             <div class="form-group">
               <label for="email">Email</label>
-              <input type="email" id="email" placeholder="Enter your email address" required>
+              <input
+                type="email"
+                id="email"
+                placeholder="Enter your email address"
+                required
+              />
             </div>
             <div class="form-group">
               <label for="topic">Project Topic</label>
-              <input type="text" id="topic" placeholder="What is your group project topic" required>
+              <input
+                type="text"
+                id="topic"
+                placeholder="What is your group project topic"
+                required
+              />
             </div>
           </div>
 
@@ -75,15 +95,36 @@
               </select>
             </div>
           </div>
-          <p><span>Please review your registration details before submitting</span></p>
+          <p>
+            <span
+              >Please review your registration details before submitting</span
+            >
+          </p>
           <div class="agree">
-            <input type="checkbox" id="agree"><label for="agree">I agreed with the event terms and conditions  and privacy policy</label>
+            <input type="checkbox" id="agree" required /><label for="agree"
+              >I agreed with the event terms and conditions and privacy
+              policy</label
+            >
           </div>
-          <button type="submit" class="submit-btn">Register Now</button>
-
-        </form>
+          <button type="submit" >Register Now</button>
         </form>
       </section>
+
+      <!-- for the congratulatory alert message -->
+      <div id="alert">
+        <img src="./imgs/congratulation.svg" alt="" />
+        <h1>
+          Congratulations <br />
+          you have successfully Registered
+        </h1>
+        <p>
+          Yes, it was easy and you did it! <br />
+          check you email box for next step 😉
+        </p>
+        <button type="button" id="backBtn">Back</button>
+      </div>
     </main>
+
+    <script src="register.js"></script>
   </body>
 </html>

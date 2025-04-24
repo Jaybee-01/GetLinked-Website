@@ -34,6 +34,7 @@ header {
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
+    color: white;
   }
 }
 header li a {
@@ -43,6 +44,7 @@ header li a {
 span {
   color: purple;
 }
+
 ul {
   display: flex;
   margin-left: 100px;
@@ -55,7 +57,12 @@ ul {
     color: hsla(0, 0%, 100%, 1);
   }
 }
-
+#contact {
+  background: linear-gradient(90deg, #903AFF 3.08%, #FF26B9 93.85%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 18px;
+}
 a .fa-arrow-left {
   color: white;
   font-size: 30px;
@@ -80,6 +87,9 @@ section div {
   width: 20%;
   p {
     color: white;
+  }
+  p span {
+    font-size: 25px;
   }
   img {
     padding: 5px;
@@ -110,8 +120,8 @@ form {
     );
     border: none;
     border-radius: 5px;
-    padding: 10px 30px;
-    width: 100px;
+    padding: 15px 20px;
+    width: 150px;
     text-align: center;
   }
   p {

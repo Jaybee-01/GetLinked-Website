@@ -82,14 +82,16 @@ section {
   }
 }
 
+#reg1 {
+  display: none;
+}
 .form-container {
   background: hsla(0, 0%, 100%, 0.03);
-  width: 40%;
+  width: 100%;
   padding: 20px 70px;
   border-radius: 10px;
   color: hsla(0, 0%, 100%, 1);
 
-  height: 600px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -133,8 +135,8 @@ label {
 
 input,
 select {
-  padding: 8%;
-  font-size: 80%;
+  padding: 12px;
+  font-size: 15px;
   border: 1px solid hsla(0, 0%, 100%, 1);
   border-radius: 6px;
   background: hsla(256, 48%, 11%, 1);
@@ -182,24 +184,24 @@ form button {
     margin-top: -10px;
   }
   button {
-  background: linear-gradient(
-    270deg,
-    #903aff 0%,
-    #d434fe 56.42%,
-    #ff26b9 99.99%,
-    #fe34b9 100%
-  );
-  border: none;
-  border-radius: 5px;
-  padding: 10px 30px;
-  width: 80%;
-  padding: 10px;
-  margin-top: 20px;
-  margin-bottom: 50px;
-  color: white;
-  cursor: pointer;
-  font-size: 16px;
-}
+    background: linear-gradient(
+      270deg,
+      #903aff 0%,
+      #d434fe 56.42%,
+      #ff26b9 99.99%,
+      #fe34b9 100%
+    );
+    border: none;
+    border-radius: 5px;
+    padding: 10px 30px;
+    width: 80%;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+  }
 }
 @media (max-width: 1198px) {
   main {
@@ -209,19 +211,42 @@ form button {
   section {
     display: flex;
     flex-direction: column;
+    gap: 10px;
+  }
+
+  #reg1 {
+    text-align: end;
+  }
+  .form-container {
+    background: none;
+    box-shadow: none;
+    width: 60%;
+    padding: 20px 65px;
+    border-radius: 10px;
+    color: hsla(0, 0%, 100%, 1);
   }
   .form-row {
-    display: block;
+    display: flex;
+    flex-direction: column;
     margin: 10px 2px;
+
   }
   .form-group {
-    width: 10em;
+    width: 100%;
     padding: 5px 10px;
   }
   input,
   select {
-    padding: 8%;
+    padding: 15px;
     font-size: 80%;
+    width: 100%;
+  }
+  #reg1 {
+    display: block;
+    float: left;
+  }
+  #reg2 {
+    display: none;
   }
 }
 

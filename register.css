@@ -2,10 +2,9 @@ body {
   margin: 0;
   padding: 0;
   background: hsla(256, 48%, 11%, 1);
+  font-family: "Montserrat", sans-serif;
 }
-html {
-  scroll-behavior: smooth;
-}
+
 header {
   display: flex;
   justify-content: space-around;
@@ -61,7 +60,7 @@ a .fa-arrow-left {
   font-size: 30px;
   margin-left: 40px;
   position: fixed;
-  top: 40px;
+  top: 20px;
   display: none;
 }
 
@@ -243,7 +242,7 @@ form button {
     width: 30px;
   }
   select {
-    padding: 15px;
+    padding: 20px;
     font-size: 80%;
     width: 100%;
   }

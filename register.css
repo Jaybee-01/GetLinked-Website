@@ -205,12 +205,13 @@ form button {
 }
 @media (max-width: 1198px) {
   main {
-    max-width: 1400px;
+    max-width: 400px;
     margin: auto;
   }
   section {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 10px;
   }
 
@@ -220,7 +221,7 @@ form button {
   .form-container {
     background: none;
     box-shadow: none;
-    width: 60%;
+    width: 100%;
     padding: 20px 65px;
     border-radius: 10px;
     color: hsla(0, 0%, 100%, 1);

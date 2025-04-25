@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   background: hsla(256, 48%, 11%, 1);
+  font-family: "Montserrat", sans-serif;
 }
 html {
   scroll-behavior: smooth;
@@ -19,7 +20,7 @@ header {
   #logo {
     list-style: none;
     color: hsla(0, 0%, 100%, 1);
-    font-size: 36px;
+    font-size: 30px;
     font-weight: 700;
   }
   a button {
@@ -53,7 +54,7 @@ ul {
 }
 
 #menu-bar {
-  display: none;   /*makes the hamburger icona to be closed*/
+  display: none; /*makes the hamburger icona to be closed*/
 }
 
 /* for the mobile nav */
@@ -179,16 +180,10 @@ ul {
   margin: auto;
   margin-top: 50px;
   margin-bottom: 10px;
-
-  /* background-image: url(./imgs/star.png);
-  background-repeat: no-repeat;
-  background-size: 30px;
-  background-position: top 150px right 100px;
-  object-fit: cover; */
 }
 .sec-2 div {
   color: hsla(0, 0%, 100%, 1);
-  margin-left: 40px;
+  /* margin-left: 40px; */
 }
 .sec-2 div h3 {
   font-weight: 700;
@@ -198,7 +193,7 @@ ul {
 }
 .sec-2 div p {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 12px;
   letter-spacing: 0%;
   line-height: 27.5px;
   font-family: montserrat;
@@ -236,19 +231,37 @@ ul {
 .sec-5 div {
   width: 100%;
 }
+
+/* This is for the faqs */
 .main-faq {
-  max-width: 80%;
+  max-width: 100%;
 }
 #faq {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  i {
+
+  p {
+    width: 200%;
+  }
+  #q-menu i {
     color: hsla(288, 99%, 60%, 1);
     float: right;
+    margin: 5px;
   }
 }
-hr {
+/* for the drop down */
+.btnHide {
+  display: none;
+}
+
+#q-menu.active .btnShow {
+  display: none;
+}
+#q-menu.active .btnHide {
+  display: block;
+}
+.main-faq hr {
   border: none;
   border: 1px solid hsla(288, 99%, 60%, 1);
 }
@@ -706,7 +719,9 @@ footer {
     width: 47%;
 
     li {
-      margin: 20px;
+      margin: 19px;
+      width: 102%;
+      /* margin-bottom: 0px; */
 
       span {
         margin-right: 20px;

@@ -242,7 +242,9 @@ ul {
   justify-content: space-between;
 
   p {
-    width: 200%;
+    width: 250%;
+    line-height: 19px;
+    font-size: 14px;
   }
   #q-menu i {
     color: hsla(288, 99%, 60%, 1);
